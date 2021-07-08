@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*
+    Todos estos componentes y secciones deberían ser llamados desde el "main.scss"
+    El archivo "all" es un shortcut para traer todos los archivos de una carpeta.
+    Entonces podrían tener un all para components, y un all para sections, y los 3 all
+    se llamarían desde main.scss.
+*/
 .button {
   padding: 10px 32px;
   border-radius: 50px;
@@ -98,12 +105,12 @@
 .container {
   padding: 50px 0px;
 }
-.container .encabezado {
+.container header {
   width: 42%;
   margin: auto;
   text-align: center;
 }
-.container .encabezado.full {
+.container header.full {
   width: 100%;
 }
 
@@ -496,6 +503,7 @@ header nav a .fas {
   font-family: "Montserrat", sans-serif;
 }
 .intro .container-intro .intro-info h2 span {
+  display: block;
   text-decoration-line: underline;
   color: #74b5fc;
 }
@@ -511,6 +519,7 @@ header nav a .fas {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
+  margin: 10px;
 }
 
 @media (min-width: 990px) {
@@ -530,7 +539,8 @@ header nav a .fas {
   .intro .container-intro .intro-info h2 {
     font-size: 48px;
   }
-  .intro .container-intro .intro-info h2, .intro .container-intro .intro-info .intro-button {
+  .intro .container-intro .intro-info h2,
+.intro .container-intro .intro-info .intro-button {
     text-align: left;
   }
 }
@@ -540,7 +550,6 @@ header nav a .fas {
 }
 .about .container-img img {
   max-width: 100%;
-  height: auto;
 }
 .about .subcontainer-principal {
   width: 85%;
